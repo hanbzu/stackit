@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Account for any border and padding in the values you specify for an element's width and height */
+  box-sizing: border-box;
+
+  color: #111111;
+  background: white;
+}
+
+#root {
+  position: relative;
+  width: 180px;
+  max-height: 220px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+/* Now for the buttons */
+#stack-tab-button {
+  position: absolute;
+  width: 65px;
+  padding: 10px 10px 10px 55px;
+  opacity: 0.3;
+}
+
+#stack-tab-button:hover {
+  opacity: 1;
+}
+
+#clear-all-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 20px;
+  opacity: 0.3;
+}
+
+#clear-all-button:hover {
+  opacity: 1;
+}
+
+/* Here comes the stack */
+#stack {
+  padding: 90px 15px 0px 15px;
+  border-bottom: 20px #b3b3b3 solid;
+}
+
+.tab {
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  padding: 4px 7px;
+  margin-bottom: 4px;
+
+  background-color: #ffffff85;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: default;
+  border-radius: 2px;
+}
+
+.large-stack > div:nth-child(1) {
+  transform: rotate(-4deg) translate3d(-4px, 0, 0);
+}
+.large-stack > div:nth-child(1):hover {
+  transform: rotate(-4deg) translate3d(14px, 0, 0);
+}
+
+.large-stack > div:nth-child(2) {
+  transform: rotate(-3deg) translate3d(-2px, 0, 0);
+}
+.large-stack > div:nth-child(2):hover {
+  transform: rotate(-3deg) translate3d(13px, 0, 0);
+}
+
+.large-stack > div:nth-child(3) {
+  transform: rotate(-1deg) translate3d(-1px, 0, 0);
+}
+.large-stack > div:nth-child(3):hover {
+  transform: rotate(-1deg) translate3d(12px, 0, 0);
+}
+
+.tab:hover {
+  transform: translate3d(12px, 0, 0);
+
+  background-color: #ffffff;
+  box-shadow: 0 0 20px 0.5px rgba(0, 0, 0, 0.11);
+}

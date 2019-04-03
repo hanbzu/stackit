@@ -1,0 +1,25 @@
+{
+  "name": "my-awesome-extension",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "chroma-js": "^2.0.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "2.1.8"
+  },
+  "scripts": {
+    "start": "NODE_PATH=./src react-scripts start",
+    "build": "INLINE_RUNTIME_CHUNK=false NODE_PATH=./src react-scripts build",
+    "test": "NODE_PATH=./src react-scripts test"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
