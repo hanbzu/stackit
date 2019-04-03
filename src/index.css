@@ -49,7 +49,7 @@ body {
 /* Here comes the stack */
 #stack {
   padding: 90px 15px 0px 15px;
-  border-bottom: 20px #b3b3b3 solid;
+  /* border-bottom: 20px #b3b3b3 solid; */
 }
 
 .tab {
@@ -92,4 +92,15 @@ body {
 
   background-color: #ffffff;
   box-shadow: 0 0 20px 0.5px rgba(0, 0, 0, 0.11);
+}
+
+#root::after {
+  content: "-";
+  height: 4px;
+  border-radius: 2px;
+  color: transparent;
+  display: block;
+
+  background-color: #585b5f;
+  margin: 5px 5px 2px 5px;
 }
