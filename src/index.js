@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import chroma from "chroma-js";
 import useStackedTabs from "useStackedTabs";
 import "./index.css";
-import stackTabIcon from "icons/outline-add_circle_outline-24px.svg";
+import stackTabIcon from "icons/outline-add_circle-24px.svg";
 import clearAllIcon from "icons/outline-delete_sweep-24px.svg";
 
 function App() {
